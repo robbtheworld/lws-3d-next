@@ -37,7 +37,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="light">
+        <section className={`light`}>
           <h2>👩🏽‍🚀 Services Offered</h2>
           <p>
             Build apps that seamlessly work on iOS, Android, and Web, saving
@@ -60,20 +60,20 @@ export default function Home() {
           <p>The best way out is always through - Robert Frost</p>
         </blockquote>
 
-        <section className="left">
+        <section className={`left`}>
           <h2>🌮 Testimonials</h2>
           <p>
-            "Tadeo is very professional and a great communicator! Highly
-            recommended!" - Orion Madsen
+            Tadeo is very professional and a great communicator! Highly
+            recommended! - Orion Madsen
           </p>
           <p>
-            "Latino Web Studio & Tadeo have been amazing to work with! High
+            Latino Web Studio & Tadeo have been amazing to work with! High
             quality work, a gold standard in what he provides. El Mejor de
-            todos!" - Johnny Oceguera
+            todos! - Johnny Oceguera
           </p>
           <p>
-            "I had the pleasure of working with Tadeo Martinez from Latino Web
-            Studio, and the experience was nothing short of exceptional." -
+            I had the pleasure of working with Tadeo Martinez from Latino Web
+            Studio, and the experience was nothing short of exceptional. -
             Mauricio Mendoza
           </p>
         </section>
