@@ -24,6 +24,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="assets/Favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+          Web & Software Engineer for iOS, Android, & Web Apps - Latino Web
+          Studio
+        </title>
+        <meta
+          name="description"
+          content="Professional web and software engineering services for iOS, Android, and web applications. Tailored solutions for businesses seeking high-quality, efficient app development from Latino Web Studio."
+        />
+        <meta property="og:image" content="assets/LWS.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
