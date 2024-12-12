@@ -5,6 +5,7 @@ import * as THREE from "three";
 
 function Main() {
   const canvasRef = useRef(null); // Use useRef to reference the canvas DOM element
+  let stars: THREE.Mesh[] = []; // Declare stars array inside the component but outside the useEffect
 
   useEffect(() => {
     if (!canvasRef.current) return; // Guard to ensure the canvas is available
@@ -47,7 +48,9 @@ function Main() {
         .map(() => THREE.MathUtils.randFloatSpread(100));
 
       star.position.set(x, y, z);
+
       scene.add(star);
+      stars.push(star); // Add the created star to the stars array
     }
 
     Array(200).fill(null).forEach(addStar);
@@ -112,6 +115,16 @@ function Main() {
       torus.rotation.x += 0.01;
       torus.rotation.y += 0.005;
       torus.rotation.z += 0.01;
+
+      // Move each star
+      stars.forEach((star) => {
+        // Oscillate back and forth along the y-axis
+        star.position.y += Math.sin(Date.now() * 0.001) * 0.02;
+        // Random movement in the x and z directions
+        star.position.x += Math.random() * 0.002 - 0.001;
+        star.position.z += Math.random() * 0.002 - 0.001;
+      });
+
       renderer.render(scene, camera);
     }
     animate();
@@ -119,6 +132,12 @@ function Main() {
     // Cleanup function to run when the component unmounts
     return () => {
       renderer.dispose(); // Dispose of the renderer to clean up resources
+      stars.forEach((star) => {
+        scene.remove(star);
+        star.geometry.dispose(); // Dispose of geometry
+        // star.material.dispose();  // Dispose of material
+      });
+      stars = []; // Clear the array
     };
   }, []);
 

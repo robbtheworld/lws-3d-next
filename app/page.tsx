@@ -1,3 +1,4 @@
+import GoogleReviews from "./components/google_reviews";
 import Main from "./js/main";
 
 export default function Home() {
@@ -62,6 +63,7 @@ export default function Home() {
 
         <section className={`left`}>
           <h2>🌮 Testimonials</h2>
+          <GoogleReviews />
           <p>
             Tadeo is very professional and a great communicator! Highly
             recommended! - Orion Madsen
