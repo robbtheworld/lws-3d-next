@@ -15,6 +15,11 @@ export default function Home() {
             software infrastructure, streamline operations, position your
             startup for funding success, and scale your business in 2025.
           </p>
+          <div>
+            <a href="#schedule" className="btn-main">
+              Schedule a Call
+            </a>
+          </div>
         </header>
 
         <blockquote>

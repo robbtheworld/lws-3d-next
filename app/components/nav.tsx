@@ -64,6 +64,8 @@ const Nav = () => {
                   height: 83,
                   width: 200,
                   borderRadius: 45,
+                  display: "flex",
+                  margin: 0,
                   //   backgroundColor: "var(--accent-tertiary);",
                 }}
               >
