@@ -1,0 +1,21 @@
+h1 {
+    font-size:2rem;
+    // &:hover {
+    //     color: #555;
+    //   }
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+
+.text-accent {
+    color:var(--accent-primary);
+}
+
+.text-shadow {
+    text-shadow:var(--text-shadow);
+}

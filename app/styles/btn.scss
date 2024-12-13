@@ -1,0 +1,15 @@
+// $accent-primary: #FFC80F; // Base color
+// $accent-primary-dark: darken($accent-primary, 10%); // Darkened color
+
+.btn-main {
+    background: var(--accent-tertiary);
+    transition:all .25s ease-in-out;
+    color:white;
+
+    // &:hover {
+    //     filter: brightness(90%);
+    // }
+    &:hover {
+        background: var(--accent-quaternary);
+    }
+}

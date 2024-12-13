@@ -1,4 +1,5 @@
-import GoogleReviews from "./components/google_reviews";
+// import GoogleReviews from "./components/google_reviews";
+import CalendlyWidget from "./components/calendly";
 import Main from "./js/main";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
       <Main />
       <main>
         <header>
-          <h1>Full-Stack Web & Software Engineering Solutions testig</h1>
+          <h1>Full-Stack Web & Software Engineering Solutions</h1>
           <h2>iOS, Android, & Web Cross-Platform Apps</h2>
           <p>
             Full-Stack Web & Software Engineering Solutions. Enhance your
@@ -63,7 +64,7 @@ export default function Home() {
 
         <section className={`left`}>
           <h2>🌮 Testimonials</h2>
-          <GoogleReviews />
+          {/* <GoogleReviews /> */}
           <p>
             Tadeo is very professional and a great communicator! Highly
             recommended! - Orion Madsen
@@ -78,6 +79,26 @@ export default function Home() {
             Studio, and the experience was nothing short of exceptional. -
             Mauricio Mendoza
           </p>
+        </section>
+
+        <section style={{ gridColumn: "3 / 12" }} id="schedule">
+          <div className="container mx-auto px-4">
+            <div className="flex justify-between -mx-4">
+              <div className="px-4 text-center">
+                <h2>How to Get Started</h2>
+                <p>
+                  If you're a startup founder or business owner looking to scale
+                  operations and build robust, cross-platform apps, schedule a
+                  call using the calendar below. The next steps will assess your
+                  needs and ensure the TechFusion System is the right fit for
+                  your business.
+                </p>
+                {/* <!-- Calendly inline widget begin --> */}
+                <CalendlyWidget />
+                {/* <!-- Calendly inline widget end --> */}
+              </div>
+            </div>
+          </div>
         </section>
 
         <blockquote>

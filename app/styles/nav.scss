@@ -1,0 +1,13 @@
+@keyframes rotate-infinite {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    }
+
+.logo-bg {
+animation: rotate-infinite 35s linear infinite; /* Adjust the duration as needed */
+transform-origin:center;
+}

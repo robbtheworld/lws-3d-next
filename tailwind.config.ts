@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'custom-gray': '#f7f7f7',
+        'accent-tertiary': '#B5539F',  // assuming these are already defined
+        'accent-quaternary': '#03BAAF',
       },
     },
   },
