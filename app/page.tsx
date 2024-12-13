@@ -92,11 +92,11 @@ export default function Home() {
               <div className="px-4 text-center">
                 <h2>How to Get Started</h2>
                 <p>
-                  If you're a startup founder or business owner looking to scale
-                  operations and build robust, cross-platform apps, schedule a
-                  call using the calendar below. The next steps will assess your
-                  needs and ensure the TechFusion System is the right fit for
-                  your business.
+                  If you are a startup founder or business owner looking to
+                  scale operations and build robust, cross-platform apps,
+                  schedule a call using the calendar below. The next steps will
+                  assess your needs and ensure the TechFusion System is the
+                  right fit for your business.
                 </p>
                 {/* <!-- Calendly inline widget begin --> */}
                 <CalendlyWidget />
